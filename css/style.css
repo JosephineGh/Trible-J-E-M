@@ -1,9 +1,21 @@
+@font-face {
+    font-family: HelveticaRoundedLTStd-Bd;
+    src: url("../fonts/HelveticaRoundedLTStd-Bd.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Crimson-Roman;
+    src: url("../fonts/Crimson-Roman.ttf") format("truetype");
+}
+
 body{
     margin: 0;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 86px 25px repeat(12, 20px);
     grid-gap: 1.6%;
+/*     font-family: 'Crimson Text'; */
+    font-family: "Crimson-Roman";
 }
 /*
 header{
@@ -24,7 +36,8 @@ header{
     border-width: 2px;
     border-color: #5a4e4d;
     display: grid;
-    
+    font-family: HelveticaRoundedLTStd-Bd;
+
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 86px;
     grid-gap: 1.6%;
@@ -47,6 +60,7 @@ header{
     grid-row: 1/2;
     grid-template-columns: repeat(10, 1fr);
     grid-gap: 1.6%;
+    margin: 30px 0 0 0;
 }
 
 #logo{
