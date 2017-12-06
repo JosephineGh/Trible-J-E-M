@@ -39,6 +39,16 @@ header{
     grid-row: 1/2;
 }
 
+#headerOptionsContainer{
+    background-color: pink;
+    padding: 0;
+    display: grid;
+    grid-column: 3/13;
+    grid-row: 1/2;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 1.6%;
+}
+
 #logo{
 /*     background-color: yellow; */
     display: flex;
@@ -61,19 +71,21 @@ header{
 
 #home{
     list-style: none;
-    grid-column: 2/13;
-    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    grid-column: 1/2;
 }
 
 #home a {
     color: white;
     text-decoration: none;
-    /* grid-column: 2/5;
-    grid-row: 1/2; */
 }
 
 #options {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    grid-column: 2/3;
 }
 
 #options a{
@@ -83,15 +95,22 @@ header{
 
 #whereAreWe {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    grid-column: 3/4;
 }
 
 #whereAreWe a{
     color: white;
     text-decoration: none;
+    white-space:nowrap;
 }
 
 #about {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    grid-column: 4/5;
 }
 
 #about a{
@@ -101,6 +120,9 @@ header{
 
 #contact {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    grid-column: 5/6;
 }
 
 #contact a{
@@ -118,9 +140,12 @@ header{
     border-width: 1px;
     border-color: #95989a;
     
+    
     grid-column: 1/13;
     grid-row: 2/3;
     
     height: 23px;
     z-index: -1;
+    width: calc(100% + 2px);
+    margin:-3px 0 0 -2px;
 }
