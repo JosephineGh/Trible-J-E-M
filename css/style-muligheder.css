@@ -1,3 +1,4 @@
+/* Fonts */
 @font-face {
     font-family: HelveticaRoundedLTStd-Bd;
     src: url("../fonts/HelveticaRoundedLTStd-Bd.ttf") format("truetype");
@@ -9,25 +10,25 @@
 }
 
 body{
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 86px 25px 680px 245px;
-    grid-gap: 1.6%;
-    font-family: "Crimson-Roman";
-    /* overflow: hidden; */
+margin: 0;
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: 86px 25px 200px 231px;
+grid-gap: 1.6%;
+font-family: "Crimson-Roman";
+/* overflow: hidden; */
 }
-
+/* Header Section */
 header{
     margin: 0;
     background-color:#a7b1c4;
     border-style: solid;
     border-width: 2px;
     border-color: #5a4e4d;
-    display: grid;
     font-family: HelveticaRoundedLTStd-Bd;
     font-size: 20px;
-
+    
+    display: grid;
     grid-template-columns: 108px repeat(10, 1fr);
     grid-template-rows: 86px;
     grid-gap: 1.6%;
@@ -36,13 +37,8 @@ header{
     grid-row: 1/2;
 }
 
-#headerBG{
-    background-color: green;
-    grid-column: 1/13;
-    grid-row: 1/2;
-}
-
 #headerOptionsContainer{
+/*     background-color: pink; */
     padding: 0;
     display: grid;
     grid-column: 2/11;
@@ -53,6 +49,7 @@ header{
 }
 
 #logo{
+/*     background-color: yellow; */
     display: flex;
     justify-content: center;
     text-align: center;
@@ -71,7 +68,6 @@ header{
     z-index: 1;
 }
 
-/*NAVIGATION*/
 #home{
     list-style: none;
     display: flex;
@@ -79,9 +75,14 @@ header{
     grid-column: 1/2;
 }
 
-#home a {
-    color: white;
+#home a, #options a, #whereAreWe a, #about a, #contact a, #socials a{
+    color: #ffffff;
     text-decoration: none;
+    white-space:nowrap;
+}
+
+#home a:hover, #options a:hover, #whereAreWe a:hover, #about a:hover, #contact a:hover, #socials a:hover{
+    color: #dbdbdb;
 }
 
 #options {
@@ -91,22 +92,11 @@ header{
     grid-column: 2/3;
 }
 
-#options a{
-    color: white;
-    text-decoration: none;
-}
-
 #whereAreWe {
     list-style: none;
     display: flex;
     justify-content: center;
     grid-column: 3/4;
-}
-
-#whereAreWe a{
-    color: white;
-    text-decoration: none;
-    white-space:nowrap;
 }
 
 #about {
@@ -116,12 +106,6 @@ header{
     grid-column: 4/5;
 }
 
-#about a{
-    color: white;
-    text-decoration: none;
-    white-space:nowrap;
-}
-
 #contact {
     list-style: none;
     display: flex;
@@ -129,36 +113,10 @@ header{
     grid-column: 5/6;
 }
 
-#contact a{
-    color: white;
-    text-decoration: none;
-} 
-
 #socials {
     list-style: none;
     display: flex;
     justify-content: center;
-}
-
-#socials a{
-    color: white;
-    text-decoration: none;
-}
-
-#navigationBar{
-    background-color: #e8e8e8;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #95989a;
-    
-    
-    grid-column: 1/13;
-    grid-row: 2/3;
-    
-    height: 23px;
-    z-index: -1;
-    width: calc(100% + 2px);
-    margin:-3px 0 0 -2px;
 }
 
 #twitter, #facebook{
@@ -214,63 +172,12 @@ header{
     white-space:nowrap;
     margin: -3px 0 0 0;    
 }
-/*NAVIGATION*/
-
-main {
-    grid-column: 1/13;
-    grid-row: 3/4; 
-    background-color: #8593AE; 
-    display: grid; 
-    grid-template-columns: 25% 50% 25%; 
-    grid-template-rows: 40% 60%; 
-}
-
-#mainlogo {
-    background-image: url("../images/Logo.png");
-    background-repeat: no-repeat;
-    background-size: cover; 
-    grid-column: 2/3; 
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    height: 216px;
-    width: 216px;
-    overflow:hidden;
-    text-indent:200%;
-    white-space:nowrap;
-    z-index: 1;
-    margin: 30px auto; 
-}
-
-#main_text {
-    grid-column: 2/3; 
-    grid-row: 2/3; 
-    margin: 0 100px;
-}
-
-#main_text h3, #main_text p {
-    justify-content: center; 
-    display: flex; 
-    color: #ededed; 
-    text-align: center; 
-}
-
-#main_text h3 {
-    font-size: 28px; 
-    margin: 0;
-    font-family: HelveticaRoundedLTStd-Bd;
-}
-
-#main_text p {
-    font-size: 16px; 
-    margin: 20px
-}
-
 
 /* Footer Section */
 
 footer{
-    background-color: #ffffff;
+    /* background-color: green; */
+    
     font-family: HelveticaRoundedLTStd-Bd;
     font-size: 15px;
     display: grid;
