@@ -12,7 +12,7 @@ body{
     margin: 0;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 86px 25px 950px 245px;
+    grid-template-rows: 86px 25px 680px 245px;
     grid-gap: 1.6%;
     font-family: "Crimson-Roman";
     /* overflow: hidden; */
@@ -219,4 +219,30 @@ header{
 main {
     grid-column: 1/13;
     grid-row: 3/4; 
+    background-color: #8593AE; 
+    display: grid; 
+    grid-template-columns: 25% 50% 25%; 
+}
+
+#mainlogo {
+    background-image: url("../images/Logo.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    grid-column: 2/3; 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 180px;
+    width: 180px;
+    overflow:hidden;
+    text-indent:200%;
+    white-space:nowrap;
+    z-index: 1;
+    margin: 50px auto; 
+}
+
+footer {
+    grid-column: 1/13; 
+    grid-row: 4/5; 
+    background-color: black;  
 }
