@@ -1,12 +1,13 @@
-@font-face {
-    font-family: HelveticaRoundedLTStd-Bd;
-    src: url("../fonts/HelveticaRoundedLTStd-Bd.ttf") format("truetype");
-}
+/* Fonts */
+    @font-face {
+        font-family: HelveticaRoundedLTStd-Bd;
+        src: url("../fonts/HelveticaRoundedLTStd-Bd.ttf") format("truetype");
+    }
 
-@font-face {
-    font-family: Crimson-Roman;
-    src: url("../fonts/Crimson-Roman.ttf") format("truetype");
-}
+    @font-face {
+        font-family: Crimson-Roman;
+        src: url("../fonts/Crimson-Roman.ttf") format("truetype");
+    }
 
 body{
     margin: 0;
@@ -18,41 +19,348 @@ body{
     /* overflow: hidden; */
 }
 
-header{
-    margin: 0;
-    background-color:#a7b1c4;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #5a4e4d;
-    display: grid;
-    font-family: HelveticaRoundedLTStd-Bd;
-    font-size: 20px;
+/* Header Section */
+    header{
+        margin: 0;
+        background-color:#a7b1c4;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #5a4e4d;
+        display: grid;
+        font-family: HelveticaRoundedLTStd-Bd;
+        font-size: 20px;
 
-    grid-template-columns: 108px repeat(10, 1fr);
-    grid-template-rows: 86px;
-    grid-gap: 1.6%;
+        grid-template-columns: 108px repeat(10, 1fr);
+        grid-template-rows: 86px;
+        grid-gap: 1.6%;
 
-    grid-column: 1/13;
-    grid-row: 1/2;
-}
+        grid-column: 1/13;
+        grid-row: 1/2;
+    }
 
-#headerBG{
-    background-color: green;
-    grid-column: 1/13;
-    grid-row: 1/2;
-}
+    #headerBG{
+        background-color: green;
+        grid-column: 1/13;
+        grid-row: 1/2;
+    }
 
-#headerOptionsContainer{
-    padding: 0;
-    display: grid;
-    grid-column: 2/11;
-    grid-row: 1/2;
-    grid-template-columns: repeat(10, 1fr);
-    grid-gap: 10%;
-    margin: 30px 0 0 10%;
-}
+    #headerOptionsContainer{
+        padding: 0;
+        display: grid;
+        grid-column: 2/11;
+        grid-row: 1/2;
+        grid-template-columns: repeat(10, 1fr);
+        grid-gap: 10%;
+        margin: 30px 0 0 10%;
+    }
 
-#logo{
+    #logo{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background-image: url("../images/Logo.png");
+        background-repeat: no-repeat;
+        background-size: cover; 
+        height: 108px;
+        width: 108px;
+        
+        overflow:hidden;
+        text-indent:200%;
+        white-space:nowrap;
+
+        grid-column: 1/3;
+        grid-row: 1/3;
+        z-index: 1;
+    }
+
+    /*NAVIGATION*/
+    #home{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        grid-column: 1/2;
+    }
+
+    #home a {
+        color: white;
+        text-decoration: none;
+    }
+
+    #options {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        grid-column: 2/3;
+    }
+
+    #options a{
+        color: white;
+        text-decoration: none;
+    }
+
+    #whereAreWe {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        grid-column: 3/4;
+    }
+
+    #whereAreWe a{
+        color: white;
+        text-decoration: none;
+        white-space:nowrap;
+    }
+
+    #about {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        grid-column: 4/5;
+    }
+
+    #about a{
+        color: white;
+        text-decoration: none;
+        white-space:nowrap;
+    }
+
+    #contact {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        grid-column: 5/6;
+    }
+
+    #contact a{
+        color: white;
+        text-decoration: none;
+    } 
+
+    #socials {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    #socials a{
+        color: white;
+        text-decoration: none;
+    }
+
+    #navigationBar{
+        background-color: #e8e8e8;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #95989a;
+        
+        
+        grid-column: 1/13;
+        grid-row: 2/3;
+        
+        height: 23px;
+        z-index: -1;
+        width: calc(100% + 2px);
+        margin:-3px 0 0 -2px;
+    }
+
+    #twitter, #facebook{
+        margin: 0 20% 0 0;
+        position: relative;
+    }
+
+    #instagram{
+        margin: 0;
+        position: relative;
+    }
+
+    #instagram svg text, #twitter svg text, #facebook svg text{
+        font-family: FontAwesome;
+        fill: #000000;
+        text-anchor: middle;
+    }
+
+    #instagram svg circle, #twitter svg circle, #facebook svg circle{
+        fill: rgba(255, 255, 255, 0.5);
+        stroke: #000000;
+    }
+
+    #instagram svg circle:hover, #twitter svg circle:hover, #facebook svg circle:hover{
+        fill: rgba(255, 255, 255, 0.8);
+        stroke: rgba(0, 0, 0, 0.5);
+    }
+
+    #navigationBar{
+        background-color: #e8e8e8;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #95989a;
+        
+        grid-column: 1/13;
+        grid-row: 2/3;
+        
+        height: 23px;
+        z-index: -1;
+        width: calc(100% + 2px);
+        margin:-3px 0 0 -2px;
+    }
+
+    #navigationBarText a{
+        color: #000000;
+        text-decoration: none;
+    }
+
+    #navigationBarText{
+        color: #000000;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        white-space:nowrap;
+        margin: -3px 0 0 0;    
+    }
+    /*NAVIGATION*/
+
+/* Main Section */
+    main {
+        grid-column: 1/13;
+        grid-row: 3/4; 
+        background-color: #8593AE; 
+        display: grid; 
+        grid-template-columns: 25% 50% 25%; 
+        grid-template-rows: 40% 60%; 
+    }
+
+    #mainlogo {
+        background-image: url("../images/Logo.png");
+        background-repeat: no-repeat;
+        background-size: cover; 
+        grid-column: 2/3; 
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 216px;
+        width: 216px;
+        overflow:hidden;
+        text-indent:200%;
+        white-space:nowrap;
+        z-index: 1;
+        margin: 30px auto; 
+    }
+
+    #main_text {
+        grid-column: 2/3; 
+        grid-row: 2/3; 
+        margin: 0 100px;
+    }
+
+    #main_text h3, #main_text p {
+        justify-content: center; 
+        display: flex; 
+        color: #ededed; 
+        text-align: center; 
+    }
+
+    #main_text h3 {
+        font-size: 28px; 
+        margin: 0;
+        font-family: HelveticaRoundedLTStd-Bd;
+    }
+
+    #main_text p {
+        font-size: 16px; 
+        margin: 20px
+    }
+
+
+/* Footer Section */
+
+    footer{
+        background-color: #ffffff;
+        font-family: HelveticaRoundedLTStd-Bd;
+        font-size: 15px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        grid-column: 1/13;
+        grid-row: 4/5;
+    }
+
+    #locationBox{
+        background-color:#a9b3c6;
+        margin: 1.5% 0.75% 1.5% 1.5%;
+        grid-column: 1/2;
+    }
+
+    #locationBoxText{
+        color: white;
+        margin: 10% 0 0 8%;
+    }
+
+    #aboutBox{
+        background-color:#a9b3c6;
+        margin: 1.5% 0.75% 1.5% 0.75%;
+        grid-column: 2/3;
+    }
+
+    #aboutBoxText{
+        color: white;
+        margin:25% 0 0 40%;
+    }
+
+    #aboutBoxText a{
+        color: #ffffff;
+        text-decoration: none;
+        white-space:nowrap;
+    }
+
+    #aboutBoxText a:hover{
+        color: #dbdbdb;
+    }
+
+    #socialsBox{
+        background-color:#a9b3c6;
+        margin: 1.5% 0.75% 1.5% 0.75%;
+        grid-column: 3/4;
+    }
+
+    #socialsBoxIcons {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    #twitterFooter, #facebookFooter{
+        margin: 24% 10% 0 0;
+        position: relative;
+    }
+
+    #instagramFooter{
+        margin: 24% 0 0 0;
+        position: relative;
+    }
+
+    #instagramFooter svg text, #twitterFooter svg text, #facebookFooter svg text{
+        font-family: FontAwesome;
+        fill: #000000;
+        text-anchor: middle;
+    }
+
+    #instagramFooter svg circle, #twitterFooter svg circle, #facebookFooter svg circle{
+        fill: rgba(255, 255, 255, 0.5);
+        stroke: #000000;
+    }
+
+    #instagramFooter svg circle:hover, #twitterFooter svg circle:hover, #facebookFooter svg circle:hover{
+        fill: rgba(255, 255, 255, 0.8);
+        stroke: rgba(0, 0, 0, 0.5);
+    }
+
+    #logoBox{
+        background-color:#a9b3c6;
+        margin: 1.5% 1.5% 1.5% 0.75%;
+        grid-column: 4/5;
+    }
+
+    #logoBoxLogo{
+    /*     background-color: yellow; */
     display: flex;
     justify-content: center;
     text-align: center;
@@ -61,315 +369,10 @@ header{
     background-size: cover; 
     height: 108px;
     width: 108px;
-    
+
     overflow:hidden;
     text-indent:200%;
     white-space:nowrap;
-
-    grid-column: 1/3;
-    grid-row: 1/3;
-    z-index: 1;
-}
-
-/*NAVIGATION*/
-#home{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    grid-column: 1/2;
-}
-
-#home a {
-    color: white;
-    text-decoration: none;
-}
-
-#options {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    grid-column: 2/3;
-}
-
-#options a{
-    color: white;
-    text-decoration: none;
-}
-
-#whereAreWe {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    grid-column: 3/4;
-}
-
-#whereAreWe a{
-    color: white;
-    text-decoration: none;
-    white-space:nowrap;
-}
-
-#about {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    grid-column: 4/5;
-}
-
-#about a{
-    color: white;
-    text-decoration: none;
-    white-space:nowrap;
-}
-
-#contact {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    grid-column: 5/6;
-}
-
-#contact a{
-    color: white;
-    text-decoration: none;
-} 
-
-#socials {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-#socials a{
-    color: white;
-    text-decoration: none;
-}
-
-#navigationBar{
-    background-color: #e8e8e8;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #95989a;
-    
-    
-    grid-column: 1/13;
-    grid-row: 2/3;
-    
-    height: 23px;
-    z-index: -1;
-    width: calc(100% + 2px);
-    margin:-3px 0 0 -2px;
-}
-
-#twitter, #facebook{
-    margin: 0 20% 0 0;
-    position: relative;
-}
-
-#instagram{
-    margin: 0;
-    position: relative;
-}
-
-#instagram svg text, #twitter svg text, #facebook svg text{
-    font-family: FontAwesome;
-    fill: #000000;
-    text-anchor: middle;
-}
-
-#instagram svg circle, #twitter svg circle, #facebook svg circle{
-    fill: rgba(255, 255, 255, 0.5);
-    stroke: #000000;
-}
-
-#instagram svg circle:hover, #twitter svg circle:hover, #facebook svg circle:hover{
-    fill: rgba(255, 255, 255, 0.8);
-    stroke: rgba(0, 0, 0, 0.5);
-}
-
-#navigationBar{
-    background-color: #e8e8e8;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #95989a;
-    
-    grid-column: 1/13;
-    grid-row: 2/3;
-    
-    height: 23px;
-    z-index: -1;
-    width: calc(100% + 2px);
-    margin:-3px 0 0 -2px;
-}
-
-#navigationBarText a{
-    color: #000000;
-    text-decoration: none;
-}
-
-#navigationBarText{
-    color: #000000;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    white-space:nowrap;
-    margin: -3px 0 0 0;    
-}
-/*NAVIGATION*/
-
-main {
-    grid-column: 1/13;
-    grid-row: 3/4; 
-    background-color: #8593AE; 
-    display: grid; 
-    grid-template-columns: 25% 50% 25%; 
-    grid-template-rows: 40% 60%; 
-}
-
-#mainlogo {
-    background-image: url("../images/Logo.png");
-    background-repeat: no-repeat;
-    background-size: cover; 
-    grid-column: 2/3; 
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    height: 216px;
-    width: 216px;
-    overflow:hidden;
-    text-indent:200%;
-    white-space:nowrap;
-    z-index: 1;
-    margin: 30px auto; 
-}
-
-#main_text {
-    grid-column: 2/3; 
-    grid-row: 2/3; 
-    margin: 0 100px;
-}
-
-#main_text h3, #main_text p {
-    justify-content: center; 
-    display: flex; 
-    color: #ededed; 
-    text-align: center; 
-}
-
-#main_text h3 {
-    font-size: 28px; 
-    margin: 0;
-    font-family: HelveticaRoundedLTStd-Bd;
-}
-
-#main_text p {
-    font-size: 16px; 
-    margin: 20px
-}
-
-
-/* Footer Section */
-
-footer{
-    background-color: #ffffff;
-    font-family: HelveticaRoundedLTStd-Bd;
-    font-size: 15px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    grid-column: 1/13;
-    grid-row: 4/5;
-}
-
-#locationBox{
-    background-color:#a9b3c6;
-    margin: 1.5% 0.75% 1.5% 1.5%;
-    grid-column: 1/2;
-}
-
-#locationBoxText{
-    color: white;
-    margin: 10% 0 0 8%;
-}
-
-#aboutBox{
-    background-color:#a9b3c6;
-    margin: 1.5% 0.75% 1.5% 0.75%;
-    grid-column: 2/3;
-}
-
-#aboutBoxText{
-    color: white;
-    margin:25% 0 0 40%;
-}
-
-#aboutBoxText a{
-    color: #ffffff;
-    text-decoration: none;
-    white-space:nowrap;
-}
-
-#aboutBoxText a:hover{
-    color: #dbdbdb;
-}
-
-#socialsBox{
-    background-color:#a9b3c6;
-    margin: 1.5% 0.75% 1.5% 0.75%;
-    grid-column: 3/4;
-}
-
-#socialsBoxIcons {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-#twitterFooter, #facebookFooter{
-    margin: 24% 10% 0 0;
-    position: relative;
-}
-
-#instagramFooter{
-    margin: 24% 0 0 0;
-    position: relative;
-}
-
-#instagramFooter svg text, #twitterFooter svg text, #facebookFooter svg text{
-    font-family: FontAwesome;
-    fill: #000000;
-    text-anchor: middle;
-}
-
-#instagramFooter svg circle, #twitterFooter svg circle, #facebookFooter svg circle{
-    fill: rgba(255, 255, 255, 0.5);
-    stroke: #000000;
-}
-
-#instagramFooter svg circle:hover, #twitterFooter svg circle:hover, #facebookFooter svg circle:hover{
-    fill: rgba(255, 255, 255, 0.8);
-    stroke: rgba(0, 0, 0, 0.5);
-}
-
-#logoBox{
-    background-color:#a9b3c6;
-    margin: 1.5% 1.5% 1.5% 0.75%;
-    grid-column: 4/5;
-}
-
-#logoBoxLogo{
-/*     background-color: yellow; */
-display: flex;
-justify-content: center;
-text-align: center;
-background-image: url("../images/Logo.png");
-background-repeat: no-repeat;
-background-size: cover; 
-height: 108px;
-width: 108px;
-
-overflow:hidden;
-text-indent:200%;
-white-space:nowrap;
-float: right;
-margin: 27% 0 0 0;
-}
+    float: right;
+    margin: 27% 0 0 0;
+    }
