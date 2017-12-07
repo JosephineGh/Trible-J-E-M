@@ -173,113 +173,110 @@ body{
         margin: -3px 0 0 0;    
     }
 
-/* TBI */
-
-
 /* Footer Section */
 
-footer{
-    /* background-color: green; */
-    
-    font-family: HelveticaRoundedLTStd-Bd;
-    font-size: 15px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    footer{
+        /* background-color: green; */
+        
+        font-family: HelveticaRoundedLTStd-Bd;
+        font-size: 15px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
 
-    grid-column: 1/13;
-    grid-row: 4/5;
-}
+        grid-column: 1/13;
+        grid-row: 4/5;
+    }
 
-#locationBox{
-    background-color:#a9b3c6;
-    margin: 1.5% 0.75% 1.5% 1.5%;
-    grid-column: 1/2;
-}
+    #locationBox{
+        background-color:#a9b3c6;
+        margin: 1.5% 0.75% 1.5% 1.5%;
+        grid-column: 1/2;
+    }
 
-#locationBoxText{
-    color: white;
-    margin: 10% 0 0 8%;
-}
+    #locationBoxText{
+        color: white;
+        margin: 10% 0 0 8%;
+    }
 
-#aboutBox{
-    background-color:#a9b3c6;
-    margin: 1.5% 0.75% 1.5% 0.75%;
-    grid-column: 2/3;
-}
+    #aboutBox{
+        background-color:#a9b3c6;
+        margin: 1.5% 0.75% 1.5% 0.75%;
+        grid-column: 2/3;
+    }
 
-#aboutBoxText{
-    color: white;
-    margin:25% 0 0 40%;
-}
+    #aboutBoxText{
+        color: white;
+        margin:25% 0 0 40%;
+    }
 
-#aboutBoxText a{
-    color: #ffffff;
-    text-decoration: none;
-    white-space:nowrap;
-}
+    #aboutBoxText a{
+        color: #ffffff;
+        text-decoration: none;
+        white-space:nowrap;
+    }
 
-#aboutBoxText a:hover{
-    color: #dbdbdb;
-}
+    #aboutBoxText a:hover{
+        color: #dbdbdb;
+    }
 
-#socialsBox{
-    background-color:#a9b3c6;
-    margin: 1.5% 0.75% 1.5% 0.75%;
-    grid-column: 3/4;
-}
+    #socialsBox{
+        background-color:#a9b3c6;
+        margin: 1.5% 0.75% 1.5% 0.75%;
+        grid-column: 3/4;
+    }
 
-#socialsBoxIcons {
-    list-style: none;
+    #socialsBoxIcons {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    #twitterFooter, #facebookFooter{
+        margin: 24% 10% 0 0;
+        position: relative;
+    }
+
+    #instagramFooter{
+        margin: 24% 0 0 0;
+        position: relative;
+    }
+
+    #instagramFooter svg text, #twitterFooter svg text, #facebookFooter svg text{
+        font-family: FontAwesome;
+        fill: #000000;
+        text-anchor: middle;
+    }
+
+    #instagramFooter svg circle, #twitterFooter svg circle, #facebookFooter svg circle{
+        fill: rgba(255, 255, 255, 0.5);
+        stroke: #000000;
+    }
+
+    #instagramFooter svg circle:hover, #twitterFooter svg circle:hover, #facebookFooter svg circle:hover{
+        fill: rgba(255, 255, 255, 0.8);
+        stroke: rgba(0, 0, 0, 0.5);
+    }
+
+    #logoBox{
+        background-color:#a9b3c6;
+        margin: 1.5% 1.5% 1.5% 0.75%;
+        grid-column: 4/5;
+    }
+
+    #logoBoxLogo{
+    /*     background-color: yellow; */
     display: flex;
     justify-content: center;
-}
-
-#twitterFooter, #facebookFooter{
-    margin: 24% 10% 0 0;
-    position: relative;
-}
-
-#instagramFooter{
-    margin: 24% 0 0 0;
-    position: relative;
-}
-
-#instagramFooter svg text, #twitterFooter svg text, #facebookFooter svg text{
-    font-family: FontAwesome;
-    fill: #000000;
-    text-anchor: middle;
-}
-
-#instagramFooter svg circle, #twitterFooter svg circle, #facebookFooter svg circle{
-    fill: rgba(255, 255, 255, 0.5);
-    stroke: #000000;
-}
-
-#instagramFooter svg circle:hover, #twitterFooter svg circle:hover, #facebookFooter svg circle:hover{
-    fill: rgba(255, 255, 255, 0.8);
-    stroke: rgba(0, 0, 0, 0.5);
-}
-
-#logoBox{
-    background-color:#a9b3c6;
-    margin: 1.5% 1.5% 1.5% 0.75%;
-    grid-column: 4/5;
-}
-
-#logoBoxLogo{
- /*     background-color: yellow; */
- display: flex;
- justify-content: center;
- text-align: center;
- background-image: url("../images/Logo.png");
- background-repeat: no-repeat;
- background-size: cover; 
- height: 108px;
- width: 108px;
- 
- overflow:hidden;
- text-indent:200%;
- white-space:nowrap;
- float: right;
- margin: 27% 0 0 0;
-}
+    text-align: center;
+    background-image: url("../images/Logo.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 108px;
+    width: 108px;
+    
+    overflow:hidden;
+    text-indent:200%;
+    white-space:nowrap;
+    float: right;
+    margin: 27% 0 0 0;
+    }
