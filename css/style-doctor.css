@@ -269,9 +269,24 @@ main {
 
 #person #box1 {
     margin: 10px 0 0 0; 
-    background-color: #ededed; 
     grid-column: 1/2; 
     grid-row: 1/2; 
+    display: grid; 
+    background-color: #ffffff; 
+    grid-template-rows: 90% 10%; 
+}
+
+#box1 #image {
+    background-image: url("../images/lægen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    grid-row: 1/2; 
+}
+
+#box1 p {
+    grid-row: 2/3; 
+    margin: 5px 10px; 
+    color: #7E7E7E;
 }
 
 #person #box2 {
@@ -279,6 +294,19 @@ main {
     background-color: #ededed; 
     grid-column: 2/3; 
     grid-row: 1/2; 
+    padding: 20px;
+}
+
+#box1 p {
+    color: #7E7E7E;
+}
+
+#lægeforeningen {
+    background-image: url("../images/lægeforeningen.gif");
+    background-repeat: no-repeat;
+    background-size: contain; 
+    grid-row: 2/3; 
+    margin: 5px 0 0 0; 
 }
 /*INFORMATION*/
 
