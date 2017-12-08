@@ -13,7 +13,7 @@ body{
     margin: 0;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 86px 25px 2000px 231px;
+    grid-template-rows: 86px 25px 1700px 231px;
     grid-gap: 1.6%;
     font-family: "Crimson-Roman";
     /* overflow: hidden; */
@@ -176,24 +176,22 @@ body{
 /* Main Section */
 
 main{
-    background-color: blue;
+    background-color: pink;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 706px repeat(12, 1fr);
-    grid-gap: 1.6%;
+    grid-template-rows: 706px 300px 125px 569px;
+    grid-column-gap: 1.6%;
     grid-column: 1/13;
     grid-row: 3/4;
 }
 
 #banner{
-    background-color: pink;
+    /* background-color: pink; */
     background-image: url("../images/place2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     grid-column: 1/13;
     grid-row: 1/2;
-
-    
 }
 
 #bannerTextTopOverlay{
@@ -232,6 +230,95 @@ main{
     color: white;
 }
 
+#buttons{
+    background-color: #e8e8e8;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-column-gap: 8%;
+    grid-column: 1/13;
+    grid-row: 2/3;
+    padding: 0 0 0 5.5%;
+}
+
+#medicPlace, #kidsPlace, #relaxationPlace, #foodPlace{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    overflow:hidden;
+    text-indent:200%;
+    white-space:nowrap;
+    margin: 25px 0 0 0;
+    clip-path: circle(50% at 50% 50%);
+    transition: 0.5s ease;
+}
+
+#medicPlace:hover, #kidsPlace:hover, #relaxationPlace:hover, #foodPlace:hover{
+    filter: brightness(110%);
+}
+
+#medicPlace{
+    background-image: url("../images/Medic.png");
+    grid-column: 1/2;
+}
+
+#kidsPlace{
+    background-image: url("../images/Kids.png");
+    grid-column: 2/3;
+}
+
+#relaxationPlace{
+    background-image: url("../images/Relaxation.png");
+    grid-column: 3/4;
+}
+
+#foodPlace{
+    background-image: url("../images/Food.png");
+    grid-column: 4/5;
+}
+
+#buttonsText{
+    background-color: #e8e8e8;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 1/13;
+    grid-row: 3/4;
+}
+
+#medicPlaceText, #kidsPlaceText, #relaxationPlaceText, #foodPlacePlaceText{
+    color: white;
+    font-size: 20px;
+    background-color: #5a4e4d;
+    white-space:nowrap;
+    padding: 20px 0 0 20%;
+}
+
+#medicPlaceText{
+    margin: 5px 2.5px 10px 10px;
+}
+#kidsPlaceText{
+    margin: 5px 2.5px 10px 2.5px;
+}
+#relaxationPlaceText{
+    margin: 5px 2.5px 10px 2.5px;
+}
+#foodPlacePlaceText{
+    margin: 5px 10px 10px 2.5px;
+}
+
+#map_container {
+    grid-column: 1/13;
+    grid-row: 4/5;
+    background-color: black; 
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+   }
 
 /* Footer Section */
 
