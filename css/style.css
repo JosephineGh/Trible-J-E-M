@@ -179,7 +179,7 @@ main{
     background-color: blue;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1920px;
+    grid-template-rows: 706px repeat(12, 1fr);
     grid-gap: 1.6%;
     grid-column: 1/13;
     grid-row: 3/4;
@@ -189,10 +189,11 @@ main{
     background-color: pink;
     background-image: url("../images/place2.jpg");
     background-repeat: no-repeat;
-    background-size: 1920px 902px;
+    background-size: cover;
     grid-column: 1/13;
     grid-row: 1/2;
-    height: 902px;
+
+    
 }
 
 #bannerTextTopOverlay{
@@ -214,7 +215,7 @@ main{
 }
 
 #bannerTextBottomOverlay{
-    margin: 698px 0 0 0;
+    margin: 503px 0 0 0;
     border-style: solid;
     border-width: 1px;
     border-color: #919091;
