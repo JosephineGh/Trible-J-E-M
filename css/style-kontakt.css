@@ -233,15 +233,8 @@ body{
         background-repeat: no-repeat;
         background-size: cover; 
         grid-column: 2/3; 
-        display: flex;
-        justify-content: center;
-        text-align: center;
         height: 216px;
         width: 216px;
-        overflow:hidden;
-        text-indent:200%;
-        white-space:nowrap;
-        z-index: 1;
         margin: 30px auto; 
     }
 
@@ -249,6 +242,7 @@ body{
         grid-column: 2/3; 
         grid-row: 2/3; 
         margin: 0 100px;
+        white-space:nowrap;
     }
 
     #main_text h3, #main_text p {

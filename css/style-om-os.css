@@ -232,16 +232,9 @@ body{
         background-image: url("../images/Logo.png");
         background-repeat: no-repeat;
         background-size: cover; 
-        grid-column: 2/3; 
-        display: flex;
-        justify-content: center;
-        text-align: center;
+        grid-column: 2/3;
         height: 216px;
         width: 216px;
-        overflow:hidden;
-        text-indent:200%;
-        white-space:nowrap;
-        z-index: 1;
         margin: 30px auto; 
     }
 
@@ -249,13 +242,14 @@ body{
         grid-column: 2/3; 
         grid-row: 2/3; 
         margin: 0 100px;
+        
     }
 
     #main_text h3, #main_text p {
         justify-content: center; 
         display: flex; 
         color: #ededed; 
-        text-align: center; 
+        text-align: center;
     }
 
     #main_text h3 {

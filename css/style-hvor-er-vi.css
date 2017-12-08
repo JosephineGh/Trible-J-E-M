@@ -10,12 +10,12 @@
     }
 
 body{
-margin: 0;
-display: grid;
-grid-template-columns: repeat(12, 1fr);
-grid-template-rows: 86px 25px 200px 231px;
-grid-gap: 1.6%;
-font-family: "Crimson-Roman";
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 86px 25px 800px 231px;
+    grid-gap: 1.6%;
+    font-family: "Crimson-Roman";
 /* overflow: hidden; */
 }
 /* Header Section */
@@ -172,6 +172,35 @@ font-family: "Crimson-Roman";
         white-space:nowrap;
         margin: -3px 0 0 0;    
     }
+/* Main Section */
+
+    main{
+        /* background-color: red; */
+        display: grid;
+        grid-template-rows: 100px 700px;
+        grid-column: 1/13;
+        grid-row: 3/4;
+    }
+
+    #whereAreWeText{
+        background-color: #5a4e4d;
+        color: #ffffff;
+        font-family: HelveticaRoundedLTStd-Bd;
+        font-size: 30px;
+        text-align: center;
+        padding: 25px 0 0 0;
+        grid-row: 1/2;
+    }
+
+    #map_container {
+        grid-row: 2/3;
+        /* background-color: black;  */
+    }
+
+    #map {
+        height: 100%;
+        width: 100%;
+    }
 
 /* Footer Section */
 
@@ -194,7 +223,7 @@ font-family: "Crimson-Roman";
     }
 
     #locationBoxText{
-        color: white;
+        color: #ffffff;
         margin: 10% 0 0 8%;
     }
 
@@ -205,7 +234,7 @@ font-family: "Crimson-Roman";
     }
 
     #aboutBoxText{
-        color: white;
+        color: #ffffff;
         margin:25% 0 0 40%;
     }
 
