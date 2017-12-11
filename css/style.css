@@ -35,6 +35,7 @@ body{
 
         grid-column: 1/13;
         grid-row: 1/2;
+        
     }
 
     #headerOptionsContainer{
@@ -115,6 +116,7 @@ body{
         list-style: none;
         display: flex;
         justify-content: center;
+        
     }
 
     #twitter, #facebook{
@@ -180,6 +182,7 @@ body{
         grid-column-gap: 1.6%;
         grid-column: 1/13;
         grid-row: 3/4;
+        overflow: hidden;
     }
 
     #banner{
@@ -195,8 +198,8 @@ body{
     }
 
     #changingImage{
-        margin: 0 0 0 -210px;
-        height: 120%;
+        margin: -150px 0 0 0;
+        height: 130%;
         grid-row: 1/2;
     }
 
