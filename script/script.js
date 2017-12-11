@@ -69,3 +69,39 @@ function hvorErVi() {
     map: map
   });
 }
+
+window.onload = intervalTimer;
+
+var myIntervalTimer;
+
+var image_tracker = 'img1';
+
+function changeImageInterval(){
+
+    var image = document.getElementById('changingImage');
+
+    if(image_tracker=='img1'){
+        image.src='images/ChangingImg2.jpg';
+        image_tracker='img2';
+    }
+    else if(image_tracker=='img2'){
+        image.src='images/ChangingImg3.jpg';
+        image_tracker='img3';
+    }
+    else if(image_tracker=='img3'){
+      image.src='images/ChangingImg4.jpg';
+      image_tracker='img4';
+    }
+    else if(image_tracker=='img4'){
+      image.src='images/ChangingImg5.jpg';
+      image_tracker='img5';
+    }
+    else{
+        image.src='images/ChangingImg1.jpg';
+        image_tracker='img1';
+    }
+}
+
+function intervalTimer(){
+    myVar = setInterval(function(){ changeImageInterval() }, 10000);
+}

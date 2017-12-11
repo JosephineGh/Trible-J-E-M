@@ -183,10 +183,20 @@ body{
     }
 
     #banner{
-        background-image: url("../images/place2.jpg");
+        /* background-image: url("../images/place2.jpg");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover; */
+        display: grid;
+        grid-template-rows: 706px;
         grid-column: 1/13;
+        grid-row: 1/2;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #changingImage{
+        width: 1530px;
+        height: 100%;
         grid-row: 1/2;
     }
 
@@ -196,6 +206,8 @@ body{
         border-color: #919091;
         background-color: rgba(126, 126, 126, 0.8);
         height: 100px;
+        width: 100%;
+        position: absolute;
     }
 
     #bannerTextTopText{
@@ -209,12 +221,15 @@ body{
     }
 
     #bannerTextBottomOverlay{
-        margin: 503px 0 0 0;
+        margin: 606px 0 0 0;
         border-style: solid;
         border-width: 1px;
         border-color: #919091;
         background-color: rgba(126, 126, 126, 0.8);
-        height: 100px;}
+        height: 100px;
+        width: 100%;
+        position: absolute;
+    }
 
     #bannerTextBottomText{
         display: flex;
