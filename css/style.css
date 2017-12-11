@@ -195,7 +195,7 @@ body{
     }
 
     #changingImage{
-        width: 1530px;
+        width: max-content;
         height: 100%;
         grid-row: 1/2;
     }
