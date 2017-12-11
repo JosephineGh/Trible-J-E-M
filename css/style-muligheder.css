@@ -13,11 +13,12 @@ body{
     margin: 0;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 86px 25px 2000px 231px;
+    grid-template-rows: 86px 25px 780px 231px;
     grid-gap: 1.6%;
     font-family: "Crimson-Roman";
     /* overflow: hidden; */
 }
+
 /* Header Section */
     header{
         margin: 0;
@@ -38,7 +39,6 @@ body{
     }
 
     #headerOptionsContainer{
-    /*     background-color: pink; */
         padding: 0;
         display: grid;
         grid-column: 2/11;
@@ -49,7 +49,6 @@ body{
     }
 
     #logo{
-    /*     background-color: yellow; */
         display: flex;
         justify-content: center;
         text-align: center;
@@ -174,130 +173,117 @@ body{
     }
 /* Main Section */
 
-main{
-    /* background-color: pink; */
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 100px 300px 125px;
-    grid-column-gap: 1.6%;
-    grid-column: 1/13;
-    grid-row: 3/4;
-}
+    main{
+        display: grid;
+        grid-template-rows: 100px 350px 225px;
+        grid-column-gap: 1.6%;
+        grid-column: 1/13;
+        grid-row: 3/4;
+    }
 
-#optionsText{
-    background-color: #5a4e4d;
-    color: #ffffff;
-    font-family: HelveticaRoundedLTStd-Bd;
-    font-size: 30px;
-    text-align: center;
-    padding: 25px 0 0 0;
-    grid-column: 1/13;
-    grid-row: 1/2;
-}
+    #optionsText{
+        background-color: #5a4e4d;
+        color: #ffffff;
+        font-family: HelveticaRoundedLTStd-Bd;
+        font-size: 30px;
+        text-align: center;
+        padding: 25px 0 0 0;
+        grid-row: 1/2;
+    }
 
-#buttons{
-    background-color: yellow;
-    display: grid;
-    grid-template-columns: repeat(4, 250px);
-    grid-template-rows: 300px 125px;
-    grid-gap: 10px;
-    grid-column: 1/13;
-    grid-row: 2/3;
-}
+    #buttons{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 350px 125px;
+        grid-column-gap: 0.5%;
+    }
 
-#medicPlaceBG{
-    background-color: blue;
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
+    #medicPlace, #kidsPlace, #relaxationPlace, #foodPlace{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 250px;
+        width: 250px;
+        overflow:hidden;
+        text-indent:200%;
+        white-space:nowrap;
+        clip-path: circle(50% at 50% 50%);
+        transition: 0.5s ease;
+        margin: 50px 0 0 15%;
+    }
 
-#kidsPlaceBG{
-    background-color: green;
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
+    #medicPlaceContainer, #kidsPlaceContainer, #relaxationPlaceContainer, #foodPlaceContainer{
+        overflow: hidden;
+        height:350px; 
+        width:100%;
+        grid-row: 1/2;
+        background-color: #e8e8e8;
+    }
 
-#relaxationPlaceBG{
-    background-color: pink;
-    grid-column: 3/4;
-    grid-row: 1/2;
-}
+    #medicPlaceContainer{
+        grid-column: 1/2;
+    }
 
-#foodPlaceBG{
-    background-color: red;
-    grid-column: 4/5;
-    grid-row: 1/2;
-}
+    #kidsPlaceContainer{
+        grid-column: 2/3;
+    }
 
-#medicPlace, #kidsPlace, #relaxationPlace, #foodPlace{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 250px;
-    width: 250px;
-    overflow:hidden;
-    text-indent:200%;
-    white-space:nowrap;
-    margin: 25px 0 0 0;
-    clip-path: circle(50% at 50% 50%);
-    transition: 0.5s ease;
-}
+    #relaxationPlaceContainer{
+        grid-column: 3/4;
+    }
 
-#medicPlace:hover, #kidsPlace:hover, #relaxationPlace:hover, #foodPlace:hover{
-    filter: brightness(110%);
-}
+    #foodPlaceContainer{
+        grid-column: 4/5;
+    }
 
-#medicPlace{
-    background-image: url("../images/Medic.png");
-}
+    #medicPlace:hover, #kidsPlace:hover, #relaxationPlace:hover, #foodPlace:hover{
+        filter: brightness(110%);
+    }
 
-#kidsPlace{
-    background-image: url("../images/Kids.png");
-}
+    #medicPlace{
+        background-image: url("../images/Medic.png");
+    }
 
-#relaxationPlace{
-    background-image: url("../images/Relaxation.png");
-}
+    #kidsPlace{
+        background-image: url("../images/Kids.png");
+    }
 
-#foodPlace{
-    background-image: url("../images/Food.png");
-}
+    #relaxationPlace{
+        background-image: url("../images/Relaxation.png");
+    }
 
-#buttonsText{
-    background-color: #e8e8e8;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column: 1/13;
-    grid-row: 3/4;
-}
+    #foodPlace{
+        background-image: url("../images/Food.png");
+    }
 
-#medicPlaceText, #kidsPlaceText, #relaxationPlaceText, #foodPlacePlaceText{
-    color: #ffffff;
-    font-size: 20px;
-    background-color: #5a4e4d;
-    white-space:nowrap;
-    padding: 20px 0 0 20%;
-}
+    #medicPlaceText, #kidsPlaceText, #relaxationPlaceText, #foodPlacePlaceText{
+        background-color: #7e675e;
+        height: 300px;
+        padding: 30px 10% 0 10%;
+        grid-row: 2/3;
+    }
 
-#medicPlaceText{
-    margin: 5px 2.5px 10px 10px;
-}
-#kidsPlaceText{
-    margin: 5px 2.5px 10px 2.5px;
-}
-#relaxationPlaceText{
-    margin: 5px 2.5px 10px 2.5px;
-}
-#foodPlacePlaceText{
-    margin: 5px 10px 10px 2.5px;
-}
+    #medicPlaceText{
+        grid-column: 1/2;
+    }
+
+    #kidsPlaceText{
+        grid-column: 2/3;
+    }
+
+    #relaxationPlaceText{
+        grid-column: 3/4;
+    }
+
+    #foodPlacePlaceText{
+        grid-column: 4/5;
+    }
+
 /* Footer Section */
 
     footer{
-        /* background-color: green; */
-        
         font-family: HelveticaRoundedLTStd-Bd;
         font-size: 15px;
         display: grid;
@@ -314,7 +300,7 @@ main{
     }
 
     #locationBoxText{
-        color: white;
+        color: #ffffff;
         margin: 10% 0 0 8%;
     }
 
@@ -325,7 +311,7 @@ main{
     }
 
     #aboutBoxText{
-        color: white;
+        color: #ffffff;
         margin:25% 0 0 40%;
     }
 
@@ -384,7 +370,6 @@ main{
     }
 
     #logoBoxLogo{
-    /*     background-color: yellow; */
     display: flex;
     justify-content: center;
     text-align: center;

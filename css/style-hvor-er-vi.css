@@ -38,7 +38,6 @@ body{
     }
 
     #headerOptionsContainer{
-    /*     background-color: pink; */
         padding: 0;
         display: grid;
         grid-column: 2/11;
@@ -49,7 +48,6 @@ body{
     }
 
     #logo{
-    /*     background-color: yellow; */
         display: flex;
         justify-content: center;
         text-align: center;
@@ -175,7 +173,6 @@ body{
 /* Main Section */
 
     main{
-        /* background-color: red; */
         display: grid;
         grid-template-rows: 100px 700px;
         grid-column: 1/13;
@@ -194,7 +191,6 @@ body{
 
     #map_container {
         grid-row: 2/3;
-        /* background-color: black;  */
     }
 
     #map {
@@ -205,8 +201,6 @@ body{
 /* Footer Section */
 
     footer{
-        /* background-color: green; */
-        
         font-family: HelveticaRoundedLTStd-Bd;
         font-size: 15px;
         display: grid;
@@ -293,7 +287,6 @@ body{
     }
 
     #logoBoxLogo{
-    /*     background-color: yellow; */
     display: flex;
     justify-content: center;
     text-align: center;

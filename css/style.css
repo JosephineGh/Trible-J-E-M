@@ -38,7 +38,6 @@ body{
     }
 
     #headerOptionsContainer{
-    /*     background-color: pink; */
         padding: 0;
         display: grid;
         grid-column: 2/11;
@@ -49,7 +48,6 @@ body{
     }
 
     #logo{
-    /*     background-color: yellow; */
         display: flex;
         justify-content: center;
         text-align: center;
@@ -176,7 +174,6 @@ body{
 /* Main Section */
 
     main{
-        /* background-color: pink; */
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 706px 300px 125px 569px;
@@ -186,7 +183,6 @@ body{
     }
 
     #banner{
-        /* background-color: pink; */
         background-image: url("../images/place2.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -323,8 +319,6 @@ body{
 /* Footer Section */
 
     footer{
-        /* background-color: green; */
-        
         font-family: HelveticaRoundedLTStd-Bd;
         font-size: 15px;
         display: grid;
@@ -411,7 +405,6 @@ body{
     }
 
     #logoBoxLogo{
-    /*     background-color: yellow; */
     display: flex;
     justify-content: center;
     text-align: center;
