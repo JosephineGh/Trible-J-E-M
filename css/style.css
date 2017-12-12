@@ -444,10 +444,7 @@ body{
 
 @media screen and (max-width: 720px) {
 
-    
     body{
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 0px 0px min-content 231px;
     }
 
