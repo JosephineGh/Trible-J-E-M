@@ -105,3 +105,13 @@ function changeImageInterval(){
 function intervalTimer(){
     myVar = setInterval(function(){ changeImageInterval() }, 10000);
 }
+
+function rwdMenuFunction() {
+  var x = document.getElementById("OldSchoolTopNav");
+  if (x.className === "headerNav") {
+      x.className += " responsive";
+  }
+  else {
+      x.className = "headerNav";
+  }
+}

@@ -35,7 +35,10 @@ body{
 
         grid-column: 1/13;
         grid-row: 1/2;
-        
+    }
+
+    nav .icon {
+        display: none;
     }
 
     #headerOptionsContainer{
@@ -438,3 +441,134 @@ body{
     float: right;
     margin: 27% 0 0 0;
     }
+
+@media screen and (max-width: 720px) {
+
+    
+    body{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 0px 0px min-content 231px;
+    }
+
+    /* Header Section */
+
+        header{
+            border-style: none;
+            display: block;
+            height: 0px;
+        
+            grid-column: 1/13;
+            grid-row: 1/2;
+            z-index: 200;
+        }
+
+        nav a.icon, nav.responsive a.icon {
+            display: block;
+            text-decoration: none; 
+            color: #ededed; 
+            position: absolute; 
+            top: 30px; 
+            right: 30px;
+        }
+
+        .icon{
+            font-size: 30px;
+        }
+
+        nav.headerNav #headerOptionsContainer{
+            display: none;
+        }
+
+        nav.responsive #headerOptionsContainer{
+            display: block;
+        }
+
+        nav.responsive #headerOptionsContainer #socials{
+            display: none;
+        }
+
+        #navigationBar{
+            display: none;
+        }
+
+        #navigationBarText{
+            display: none;
+        }
+
+        #headerOptionsContainer{
+            margin: 0 0 0 0;
+            padding: 15px 0 0 0;
+            background-color:#a7b1c4;
+            border-style: solid;
+            border-width: 2px;
+            border-color: #5a4e4d;
+            height: 140px;
+            z-index: 100;
+        }
+
+        #logo{
+            position: absolute;
+        }
+
+    /* Main Section */
+        main{
+            grid-template-rows: 635px 150px min-content 400px;
+        }
+
+        #changingImage{
+            margin: 0 0 0 -620px;
+            height: 90%;
+        }
+
+        #bannerTextBottomOverlay{
+            margin: 533px 0 0 0;
+        }
+
+        #buttons{
+            grid-template-columns: repeat(4, 26%);
+            grid-column-gap: 0%;
+        }
+
+        #medicPlace, #kidsPlace, #relaxationPlace, #foodPlace{
+            height: 110px;
+            width: 110px;
+        }
+
+        #buttonsText{
+            grid-template-columns: repeat(4, 25%);
+        }
+
+        #medicPlaceText, #kidsPlaceText, #relaxationPlaceText, #foodPlacePlaceText{
+            font-size: 16px;
+            white-space:unset;
+            word-break: break-all;
+            padding: 20px 0 0 10px;
+        }
+    
+
+    /* Footer Section */
+
+        #locationBox{
+            background-color:#a9b3c6;
+            margin: 1.5% 0.75% 1.5% 1.5%;
+            grid-column: 1/2;
+        }
+
+        #aboutBox{
+            display: flex;
+            justify-content: center;
+        }
+
+        #aboutBoxText{
+            margin: 45px 0 0 0;
+        }
+
+        #twitterFooter, #facebookFooter{
+            margin: 40px 10% 0 0;
+        }
+
+        #instagramFooter{
+            margin: 40px 0 0 0;
+        }
+}
