@@ -426,7 +426,6 @@ body{
 
 @media screen and (max-width: 901px) {
     
-    
     body{
         grid-template-rows: 104px 0 min-content min-content ;
     }

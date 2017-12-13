@@ -12,42 +12,49 @@
 </head>
 <body>
     <header>
-        <div id="logo"><a href="index.html">Home</a></div> 
-        <ul id="headerOptionsContainer">
-            <li id="home"><a href="index.html">Hjem</a></li>
-            <li id="options"><a href="index-muligheder.html">Muligheder</a></li>
-            <li id="whereAreWe"><a href="index-hvor-er-vi.html">Hvor er vi?</a></li>
-            <li id="about"><a href="index-om-os.html">Om os</a></li>
-            <li id="contact"><a href="index-kontakt.html">Kontakt</a></li>
-            <div id="socials">
-                <div id="facebook">
-                    <svg height="30" width="30">
-                        <a href="https://facebook.com/" target="blank">
-                            <text x="15" y="20" font-size="15">&#xf09a;</text>
-                            <circle cx="15" cy="15" r="13"></circle>
-                        </a>
-                    </svg>
-                </div>
+        <div id="logo"><a href="index.html">Home</a></div>
+        <nav class="headerNav" id="OldSchoolTopNav">
+            <ul id="headerOptionsContainer">
+                <li id="home"><a href="index.html">Hjem</a></li>
+                <li id="options"><a href="index-muligheder.html">Muligheder</a></li>
+                <li id="whereAreWe"><a href="index-hvor-er-vi.html">Hvor er vi?</a></li>
+                <li id="about"><a href="index-om-os.html">Om os</a></li>
+                <li id="contact"><a href="index-kontakt.html">Kontakt</a></li>
+                <div id="socials">
+                    <div id="facebook">
+                        <svg height="30" width="30">
+                            <a href="https://facebook.com/" target="blank">
+                                <text x="15" y="20" font-size="15">&#xf09a;</text>
+                                <circle cx="15" cy="15" r="13"></circle>
+                            </a>
+                        </svg>
+                    </div>
 
-                <div id="twitter">
-                    <svg height="30" width="30">
-                        <a href="https://twitter.com/" target="blank">
-                            <text x="15" y="21" font-size="15">&#xf099;</text>
-                            <circle cx="15" cy="15" r="13"></circle>
-                        </a>
-                    </svg>
-                </div>
+                    <div id="twitter">
+                        <svg height="30" width="30">
+                            <a href="https://twitter.com/" target="blank">
+                                <text x="15" y="21" font-size="15">&#xf099;</text>
+                                <circle cx="15" cy="15" r="13"></circle>
+                            </a>
+                        </svg>
+                    </div>
 
-                <div id="instagram">
-                    <svg height="30" width="30">
-                        <a href="https://www.instagram.com/" target="blank">
-                            <text x="15" y="20" font-size="15">&#xf16d;</text>
-                            <circle cx="15" cy="15" r="13"></circle>
-                        </a>
-                    </svg>
+                    <div id="instagram">
+                        <svg height="30" width="30">
+                            <a href="https://www.instagram.com/" target="blank">
+                                <text x="15" y="20" font-size="15">&#xf16d;</text>
+                                <circle cx="15" cy="15" r="13"></circle>
+                            </a>
+                        </svg>
+                    </div>
                 </div>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="rwdMenuFunction()">&#9776;</a>
+        
+            <div id="headerTextContainer">
+                <div id="headerText">Fælles Folkelig Forberedelse</div>
             </div>
-        </ul>
+        </nav>
         <div id="navigationBar"></div>
             <div id="navigationBarText">
                <a href="index.html">Hjem</a> <i class="fa fa-arrow-right" aria-hidden="true"></i> <a href="index-muligheder.html">Muligheder</a> <i class="fa fa-arrow-right" aria-hidden="true"></i> <a href="index-frirumshuset.html">Frirumshuset</a>
