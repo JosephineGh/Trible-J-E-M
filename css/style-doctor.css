@@ -354,18 +354,21 @@ body{
 
     #locationBoxText{
         color: #ffffff;
-        margin: 10% 0 0 8%;
+        padding: 35px 10px 0 calc(8% + 10px);;
     }
 
     #aboutBox{
         background-color:#a9b3c6;
         margin: 1.5% 0.75% 1.5% 0.75%;
         grid-column: 2/3;
+        display: flex;
+        justify-content: center;
     }
 
     #aboutBoxText{
         color: #ffffff;
-        margin:25% 0 0 40%;
+        margin:100px 0 0 0;
+        padding: 0 10px 0 10px;
     }
 
     #aboutBoxText a{
@@ -388,15 +391,16 @@ body{
         list-style: none;
         display: flex;
         justify-content: center;
+        padding: 0 10px 0 10px;
     }
 
     #twitterFooter, #facebookFooter{
-        margin: 24% 10% 0 0;
+        margin: 100px 10% 0 0;
         position: relative;
     }
 
     #instagramFooter{
-        margin: 24% 0 0 0;
+        margin: 100px 0 0 0;
         position: relative;
     }
 
@@ -423,20 +427,20 @@ body{
     }
 
     #logoBoxLogo{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-image: url("../images/Logo.png");
-    background-repeat: no-repeat;
-    background-size: cover; 
-    height: 108px;
-    width: 108px;
-
-    overflow:hidden;
-    text-indent:200%;
-    white-space:nowrap;
-    float: right;
-    margin: 27% 0 0 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background-image: url("../images/Logo.png");
+        background-repeat: no-repeat;
+        background-size: cover; 
+        height: 108px;
+        width: 108px;
+        
+        overflow:hidden;
+        text-indent:200%;
+        white-space:nowrap;
+        float: right;
+        margin: 100px 0 0 0;
     }
 
 @media screen and (max-width: 720px) {
@@ -576,31 +580,5 @@ body{
     
         #lægeforeningen {
             background-size: 200px; 
-        }
-
-    /* Footer Section */
-
-
-        #locationBox{
-            background-color:#a9b3c6;
-            margin: 1.5% 0.75% 1.5% 1.5%;
-            grid-column: 1/2;
-        }
-
-        #aboutBox{
-            display: flex;
-            justify-content: center;
-        }
-
-        #aboutBoxText{
-            margin: 45px 0 0 0;
-        }
-
-        #twitterFooter, #facebookFooter{
-            margin: 40px 10% 0 0;
-        }
-
-        #instagramFooter{
-            margin: 40px 0 0 0;
         }
 }
