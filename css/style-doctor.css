@@ -83,6 +83,16 @@ body{
         grid-column: 1/2;
     }
 
+    #home a, #options a, #whereAreWe a, #about a, #contact a, #socials a{
+        color: #ffffff;
+        text-decoration: none;
+        white-space:nowrap;
+    }
+
+    #home a:hover, #options a:hover, #whereAreWe a:hover, #about a:hover, #contact a:hover, #socials a:hover{
+        color: #dbdbdb;
+    }
+
     #home a {
         color: #ffffff;
         text-decoration: none;
