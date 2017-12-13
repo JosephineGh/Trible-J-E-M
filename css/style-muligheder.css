@@ -470,7 +470,7 @@ body{
 
         #headerTextContainer{
             height: 100px;
-            width: 100%;
+            width: calc(100% - 5px);
             position: absolute;
             display: grid;
             grid-template-rows: 100px;
