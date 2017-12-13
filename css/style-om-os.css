@@ -493,4 +493,10 @@ body{
         #main_text {
             margin: 0;   
         }
+
+    /* Footer Section */
+
+        footer{
+            overflow: hidden;
+        }
 }

@@ -552,7 +552,9 @@ body{
             word-break: break-all;
             padding: 20px 0 0 10px;
         }
-    
+    /* Footer Section */
 
-
+        footer{
+            overflow: hidden;
+        }
 }

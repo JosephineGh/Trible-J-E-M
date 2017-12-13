@@ -581,4 +581,10 @@ body{
         #lægeforeningen {
             background-size: 200px; 
         }
+
+    /* Footer Section */
+
+        footer{
+            overflow: hidden;
+        }
 }

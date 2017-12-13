@@ -423,7 +423,13 @@ body{
 
     /* Main Section */
     
-    main{
-        grid-template-rows: 100px 500px;
-    }
+        main{
+            grid-template-rows: 100px 500px;
+        }
+
+    /* Footer Section */
+
+        footer{
+            overflow: hidden;
+        }
 }
