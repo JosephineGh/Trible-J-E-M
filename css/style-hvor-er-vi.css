@@ -45,6 +45,11 @@ body{
         display: none;
     }
 
+    #topNav{
+        grid-column: 2/11;
+        grid-row: 1/2;
+    }
+
     #headerOptionsContainer{
         padding: 0;
         display: grid;

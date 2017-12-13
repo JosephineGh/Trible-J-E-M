@@ -107,7 +107,7 @@ function intervalTimer(){
 }
 
 function rwdMenuFunction() {
-  var x = document.getElementById("OldSchoolTopNav");
+  var x = document.getElementById("topNav");
   if (x.className === "headerNav") {
       x.className += " responsive";
   }
